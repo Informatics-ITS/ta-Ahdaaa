@@ -2,8 +2,8 @@
 
 **Nama Mahasiswa**: Ahda Filza Ghaffaru
 **NRP**: 5025211144
-**Judul TA**:STUDI PERBANDINGAN PRINCIPAL COMPONENT ANALYSIS (PCA) dan t-DISTRIBUTED STOCHASTIC NEIGHBOR EMBEDDING (t-SNE) DALAM DETEKSI CACAT PERANGKAT LUNAK
-**Dosen Pembimbing**: Ir. Siti Rochimah, MT., Ph.D
+**Judul TA**: STUDI PERBANDINGAN PRINCIPAL COMPONENT ANALYSIS (PCA) dan t-DISTRIBUTED STOCHASTIC NEIGHBOR EMBEDDING (t-SNE) DALAM DETEKSI CACAT PERANGKAT LUNAK 
+**Dosen Pembimbing**: Ir. Siti Rochimah, MT., Ph.D 
 **Dosen Ko-pembimbing**: Dini Adni Navastara, S.Kom, M.Sc.
 
 ---
@@ -25,15 +25,7 @@ _Klik gambar di atas untuk menonton demo_
   - Python 3.10 (wajib, untuk kompatibilitas dengan seluruh pustaka yang digunakan)
   - pip (Python package installer)
   - Git
-
-### 📁 Struktur Folder Utama
-
-Comparison-PCA-TSNE/
-├── data/ # Letakkan semua dataset NASA MDP di sini
-├── notebooks/ # Berisi semua analisis PCA & t-SNE dalam format .ipynb
-├── requirements_310.txt # Daftar dependensi untuk Python 3.10
-└── ... # File dan folder lainnya
-
+    
 ### Langkah-langkah
 
 1. **Clone Repository**

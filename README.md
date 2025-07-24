@@ -1,10 +1,10 @@
 # 🏁 Tugas Akhir (TA) - Final Project
 
-**Nama Mahasiswa**: Ahda Filza Ghaffaru
-**NRP**: 5025211144
-**Judul TA**: STUDI PERBANDINGAN PRINCIPAL COMPONENT ANALYSIS (PCA) dan t-DISTRIBUTED STOCHASTIC NEIGHBOR EMBEDDING (t-SNE) DALAM DETEKSI CACAT PERANGKAT LUNAK 
-**Dosen Pembimbing**: Ir. Siti Rochimah, MT., Ph.D 
-**Dosen Ko-pembimbing**: Dini Adni Navastara, S.Kom, M.Sc.
+- **Nama Mahasiswa**: Ahda Filza Ghaffaru
+- **NRP**: 5025211144
+- **Judul TA**: STUDI PERBANDINGAN PRINCIPAL COMPONENT ANALYSIS (PCA) dan t-DISTRIBUTED STOCHASTIC NEIGHBOR EMBEDDING (t-SNE) DALAM DETEKSI CACAT PERANGKAT LUNAK 
+- **Dosen Pembimbing**: Ir. Siti Rochimah, MT., Ph.D 
+- **Dosen Ko-pembimbing**: Dini Adni Navastara, S.Kom, M.Sc.
 
 ---
 
@@ -12,8 +12,8 @@
 
 Embed video demo di bawah ini:
 
-[![Demo Aplikasi](https://)](https://www.youtube.com/watch?v=VIDEO_ID)  
-_Klik gambar di atas untuk menonton demo_
+[Demo Aplikasi](https://www.youtube.com/watch?v=VIDEO_ID)  
+_Klik tulisan di atas untuk menonton demo_
 
 ---
 
@@ -128,7 +128,7 @@ Antarmuka web ini dibangun menggunakan **Vue.js** dan digunakan untuk:
 
 ## 📚 Dokumentasi Tambahan
 
-- [![Hasil Excel Perbandingan Seluruh Skenario]](https://docs.google.com/spreadsheets/d/1Qh_lZc0b3mlPFUS0Zy01gvwzgw8URfgS/edit?usp=sharing&ouid=107222116685887205627&rtpof=true&sd=true)
+- [Hasil Excel Perbandingan Seluruh Skenario](https://docs.google.com/spreadsheets/d/1Qh_lZc0b3mlPFUS0Zy01gvwzgw8URfgS/edit?usp=sharing&ouid=107222116685887205627&rtpof=true&sd=true)
 
 ---
 

@@ -1,75 +1,148 @@
 # 🏁 Tugas Akhir (TA) - Final Project
 
-**Nama Mahasiswa**: [Nama Lengkap]  
-**NRP**: [Nomor Registrasi Pokok]  
-**Judul TA**: [Judul Tugas Akhir]  
-**Dosen Pembimbing**: [Nama Dosen]  
-**Dosen Ko-pembimbing**: [Nama Dosen]
+**Nama Mahasiswa**: Ahda Filza Ghaffaru
+**NRP**: 5025211144
+**Judul TA**:STUDI PERBANDINGAN PRINCIPAL COMPONENT ANALYSIS (PCA) dan t-DISTRIBUTED STOCHASTIC NEIGHBOR EMBEDDING (t-SNE) DALAM DETEKSI CACAT PERANGKAT LUNAK
+**Dosen Pembimbing**: Ir. Siti Rochimah, MT., Ph.D
+**Dosen Ko-pembimbing**: Dini Adni Navastara, S.Kom, M.Sc.
 
 ---
 
-## 📺 Demo Aplikasi  
-Embed video demo di bawah ini (ganti `VIDEO_ID` dengan ID video YouTube Anda):  
+## 📺 Demo Aplikasi
 
-[![Demo Aplikasi](https://i.ytimg.com/vi/zIfRMTxRaIs/maxresdefault.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)  
-*Klik gambar di atas untuk menonton demo*
+Embed video demo di bawah ini:
+
+[![Demo Aplikasi](https://)](https://www.youtube.com/watch?v=VIDEO_ID)  
+_Klik gambar di atas untuk menonton demo_
 
 ---
 
-*Konten selanjutnya hanya merupakan contoh awalan yang baik. Anda dapat berimprovisasi bila diperlukan.*
+## 🛠 Panduan Instalasi & Menjalankan Folder `Comparison-PCA-TSNE`
 
-## 🛠 Panduan Instalasi & Menjalankan Software  
+### Prasyarat
 
-### Prasyarat  
+- Daftar dependensi (contoh):
+  - Python 3.10 (wajib, untuk kompatibilitas dengan seluruh pustaka yang digunakan)
+  - pip (Python package installer)
+  - Git
+
+### 📁 Struktur Folder Utama
+
+Comparison-PCA-TSNE/
+├── data/ # Letakkan semua dataset NASA MDP di sini
+├── notebooks/ # Berisi semua analisis PCA & t-SNE dalam format .ipynb
+├── requirements_310.txt # Daftar dependensi untuk Python 3.10
+└── ... # File dan folder lainnya
+
+### Langkah-langkah
+
+1. **Clone Repository**
+   ```bash
+   git clone https://github.com/Informatics-ITS/ta-Ahdaaa
+   ```
+2. **Siapkan Cleaned D'' Dataset NASA MDP**
+
+- Unduh seluruh dataset dari [sini](https://github.com/klainfo/NASADefectDataset).
+- Masukkan semua file .arff ke dalam folder /Comparison-PCA-TSNE/data
+
+3. **Clone Parametric t-SNE**
+   Pastikan Anda sudah meng-pull repositori parametric t-SNE dari jsilter, karena ini digunakan dalam analisis:
+
+   ```bash
+   git clone https://github.com/jsilter/parametric_tsne.git
+   ```
+
+4. **Instalasi Dependensi**
+   Pastikan Anda berada di dalam folder Comparison-PCA-TSNE, lalu jalankan:
+
+   ```bash
+   pip install -r requirements_310.txt
+   ```
+
+5. **Jalankan Aplikasi**
+   Tidak perlu menjalankan main.py atau API. Cukup buka dan jalankan notebook Jupyter. Untuk analisis gabungan jalankan
+
+   ```bash
+   /Comparison-PCA-TSNE/notebooks/analysis.ipynb
+   ```
+
+   Sementara untuk analisis terpisah, jalankan separate.ipynb dengan mengisi variabel `dataset_name`
+
+## 🛠 Panduan Instalasi & Menjalankan Folder `Model-Test-Web`
+
+Antarmuka web ini dibangun menggunakan **Vue.js** dan digunakan untuk:
+
+- Mengunggah file Python untuk diprediksi oleh model
+- Mengunggah file JSON berisi metrik kompleksitas
+- Menampilkan hasil prediksi dan evaluasi model secara visual
+
+### Prasyarat
+
 - Daftar dependensi (contoh):
   - Python 3.10+
-  - Node.js v18+
-  - MySQL 8.0
-  - [Lainnya...]
+  - pip (Python package installer)
+  - Git
+  - [Node.js](https://nodejs.org/) (versi 16.x atau 18.x direkomendasikan)
+  - npm (biasanya sudah satu paket dengan Node.js)
 
-### Langkah-langkah  
-1. **Clone Repository**  
+### Langkah-langkah Backend
+
+1. **Clone Repository**
    ```bash
-   git clone https://github.com/Informatics-ITS/TA.git
+   git clone https://github.com/Informatics-ITS/ta-Ahdaaa
    ```
-2. **Instalasi Dependensi**
+2. **Unduh Model Terbaik**
+
+- Unduh file model .pkl dari link [berikut](https://drive.google.com/file/d/1M5nnmA2XwW22x2Buzb6DR8TEjiMOaVh8/view?usp=sharing)
+- Lalu, letakkan file tersebut di dalam folder berikut: `/Model-Test-Web/backend/Model`
+
+3. **Instalasi Dependensi**
+   Pastikan Anda berada di dalam folder `/Model-Test-Web/backend/`, lalu jalankan:
+
    ```bash
-   cd [folder-proyek]
-   pip install -r requirements.txt  # Contoh untuk Python
-   npm install  # Contoh untuk Node.js
+   pip install -r requirements.txt
    ```
-3. **Konfigurasi**
-- Salin/rename file .env.example menjadi .env
-- Isi variabel lingkungan sesuai kebutuhan (database, API key, dll.)
+
 4. **Jalankan Aplikasi**
+
    ```bash
-   python main.py  # Contoh untuk Python
-   npm start      # Contoh untuk Node.js
+   uvicorn main:app --reload
    ```
-5. Buka browser dan kunjungi: `http://localhost:3000` (sesuaikan dengan port proyek Anda)
+
+### Langkah-langkah Backend
+
+1. **Instalasi Dependensi**
+   Pastikan Anda berada di dalam folder `/Model-Test-Web/frontend/`, lalu jalankan:
+
+   ```bash
+   npm install
+   ```
+
+2. **Jalankan Aplikasi**
+
+   ```bash
+   npm run dev
+   ```
+
+3. **Buka Browser**
+
+   ```bash
+   http://localhost:5173
+   ```
+
+   Jika port berbeda (misalnya karena konflik), terminal akan menampilkan port baru.
 
 ---
 
 ## 📚 Dokumentasi Tambahan
 
-- [![Dokumentasi API]](docs/api.md)
-- [![Diagram Arsitektur]](docs/architecture.png)
-- [![Struktur Basis Data]](docs/database_schema.sql)
-
----
-
-## ✅ Validasi
-
-Pastikan proyek memenuhi kriteria berikut sebelum submit:
-- Source code dapat di-build/run tanpa error
-- Video demo jelas menampilkan fitur utama
-- README lengkap dan terupdate
-- Tidak ada data sensitif (password, API key) yang ter-expose
+- [![Hasil Excel Perbandingan Seluruh Skenario]](https://docs.google.com/spreadsheets/d/1Qh_lZc0b3mlPFUS0Zy01gvwzgw8URfgS/edit?usp=sharing&ouid=107222116685887205627&rtpof=true&sd=true)
 
 ---
 
 ## ⁉️ Pertanyaan?
 
 Hubungi:
-- Penulis: [email@mahasiswa]
-- Pembimbing Utama: [email@pembimbing]
+
+- Penulis: [5025211144@student.its.ac.id]
+- Pembimbing Utama: [siti@if.its.ac.id]
